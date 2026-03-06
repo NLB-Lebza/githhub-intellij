@@ -1,4 +1,13 @@
 package com.lebo.stringtester.adapterService;
 
-public class WpxAdapter {
+import com.lebo.stringtester.model.SubClass;
+import org.springframework.stereotype.Component;
+
+@Component
+public class WpxAdapter implements DestionationAapter {
+
+    @Override
+    public String process(SubClass request){
+        return "I took the path WPX: "+ request.getResults();
+    }
 }

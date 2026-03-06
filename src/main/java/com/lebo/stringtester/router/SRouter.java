@@ -1,6 +1,5 @@
 package com.lebo.stringtester.router;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
@@ -14,20 +13,17 @@ public class SRouter {
             "30","WPX"
     );
 
-    //logic of overriding, ill be using if statement
+    //logic of overriding, ill be using if statement--ParaC
     public String route(String last, String first ) {
 
         if ("10".equals(last)) {
             return "APX";
+
         }
         if ("30".equals(last)) {
             return "WPX";
-
         }
-        if ("30".equals(first)) {
-            return "WX";
-        }
-        return "Nothing";
+        return path.getOrDefault(first,"Nothing");
     }
 }
 

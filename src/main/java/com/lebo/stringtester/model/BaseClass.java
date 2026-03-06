@@ -14,7 +14,7 @@ public abstract class BaseClass {
         this.entryPoint = entryPoint;
 
     }
-    //this make the class to be overriden(in this case it forces the child class to define the routing)
+    //this make the class to be overriden->implementation(in this case it forces the child class to define the routing)
     public abstract String RouterKeyOne();
     public abstract String RouterKeyTwo();
    // public abstract String RouterKeyThree();
