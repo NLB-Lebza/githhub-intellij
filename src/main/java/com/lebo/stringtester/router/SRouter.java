@@ -14,7 +14,7 @@ public class SRouter {
     );
 
     //logic of overriding, ill be using if statement--ParaC
-    public String route(String last, String first ) {
+    public String route(String first, String last ) {
 
         if ("10".equals(last)) {
             return "APX";

@@ -3,7 +3,7 @@ package com.lebo.stringtester.adapterService;
 import com.lebo.stringtester.model.SubClass;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("APX")
 public class ApxAdapter implements  DestionationAapter {
 
     @Override

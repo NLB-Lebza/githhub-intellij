@@ -9,7 +9,7 @@ public abstract class BaseClass {
         return entryPoint;
     }
     //setter
-    public  void setEntrypoint(String entryPoint) {
+    public  void setEntryPoint(String entryPoint) {
 
         this.entryPoint = entryPoint;
 

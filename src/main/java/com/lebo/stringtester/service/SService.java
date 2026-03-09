@@ -9,10 +9,10 @@ import com.lebo.stringtester.model.SubClass;
 
 @Service
 public class SService {
-
-    @Autowired
+    //field injection
+@Autowired
     private SRouter router;
-    @Autowired
+@Autowired
     private ApplicationContext context;
 
 
@@ -23,7 +23,7 @@ public class SService {
 String last=request.RouterKeyTwo();
 String destination = router.route(first,last);
 
-if ("nothing".equals(destination)){
+if ("Nothing".equals(destination)){
     return "Invalid entry";
 }
         DestionationAapter adapter= (DestionationAapter) context.getBean(destination);
